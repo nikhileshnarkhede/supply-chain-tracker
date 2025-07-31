@@ -1,0 +1,11 @@
+ProductID,Name,Category,Stock,Price,ReorderLevel
+P001,Screws 1 inch,Hardware,300,2.5,100
+P002,Nails 2 inch,Hardware,150,1.2,80
+P003,Hammer,Tools,50,15.0,20
+P004,Screwdriver,Tools,70,7.0,30
+P005,Drill Machine,Electronics,25,80.0,10
+P006,Wrench,Tools,45,10.0,25
+P007,Cutter,Tools,20,5.5,10
+P008,Gloves,Safety,60,2.5,30
+P009,Mask,Safety,90,1.0,40
+P010,Paint Brush,Painting,120,3.5,50
