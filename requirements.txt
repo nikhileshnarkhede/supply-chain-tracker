@@ -1,0 +1,17 @@
+# Core
+streamlit==1.35.0
+pymongo==4.7.2
+pandas==2.2.2
+plotly==5.22.0
+
+# Optional (file handling, extended CSV/Excel support)
+openpyxl==3.1.2         # For Excel file read/write
+xlrd==2.0.1             # For reading older Excel files (.xls)
+chardet==5.2.0          # For detecting CSV encodings
+numpy==1.26.4           # Often needed with pandas/plotly
+
+# Security (password hashing)
+hashlib; python_version<'3.10'  # Built-in, but included for clarity
+
+# (Optional) For UI polishing
+streamlit-extras==0.4.0

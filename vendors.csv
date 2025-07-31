@@ -1,0 +1,6 @@
+VendorID,Name,ContactInfo,ProductSupplied
+V001,BuildCorp,build@example.com,"P001, P002, P004"
+V002,ToolMart,tools@example.com,"P003, P006, P007"
+V003,SafeGear,safety@example.com,"P008, P009"
+V004,ElectroHub,elec@example.com,P005
+V005,PaintPros,paint@example.com,P010
