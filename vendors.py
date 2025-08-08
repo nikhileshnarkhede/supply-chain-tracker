@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 from pymongo import MongoClient
 
-client = MongoClient("mongodb://localhost:27017")
+# MongoDB client from secrets
+client = MongoClient(st.secrets["MONGO_URI"])
 db = client["supply_chain"]
 vendors = db["vendors"]
 products = db["products"]
