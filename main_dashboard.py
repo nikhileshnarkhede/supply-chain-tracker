@@ -8,7 +8,7 @@ import pandas as pd
 import plotly.express as px
 
 # MongoDB client (use Streamlit secrets)
-client = MongoClient(st.secrets["MONGO_URI"])
+client = MongoClient("mongodb://localhost:27017")
 db = client["supply_chain"]
 
 # Users and roles
