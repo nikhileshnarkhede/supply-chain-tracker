@@ -4,7 +4,7 @@ from pymongo import MongoClient
 from datetime import datetime
 
 # MongoDB client from secrets
-client = MongoClient(st.secrets["MONGO_URI"])
+client = MongoClient("mongodb://localhost:27017")
 db = client["supply_chain"]
 orders = db["orders"]
 products = db["products"]
