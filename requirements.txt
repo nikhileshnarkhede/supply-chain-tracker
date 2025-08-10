@@ -1,6 +1,7 @@
 # Core
 streamlit==1.35.0
-pymongo==4.7.2
+pymongo
+dnspython
 pandas==2.2.2
 plotly==5.22.0
 
