@@ -2,9 +2,19 @@ import streamlit as st
 import pandas as pd
 from pymongo import MongoClient
 from datetime import datetime
+from urllib.parse import quote_plus
+username = "narkhedenikhilesh"
+password = "Germany@2024"  # Your actual password
 
-# MongoDB client from secrets
-client = MongoClient("mongodb://localhost:27017")
+# Encode username and password
+username = quote_plus(username)
+password = quote_plus(password)
+
+uri = f"mongodb+srv://{username}:{password}@cluster0.zdfnl8f.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
+client = MongoClient(uri)
+
+#client = MongoClient("mongodb+srv://narkhedenikhilesh:<Germany@2024>@cluster0.zdfnl8f.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 db = client["supply_chain"]
 orders = db["orders"]
 products = db["products"]
