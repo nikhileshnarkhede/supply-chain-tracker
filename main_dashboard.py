@@ -6,9 +6,20 @@ import hashlib
 from pymongo import MongoClient
 import pandas as pd
 import plotly.express as px
+from urllib.parse import quote_plus
 
-# MongoDB client (use Streamlit secrets)
-client = MongoClient("mongodb://localhost:27017")
+username = "narkhedenikhilesh"
+password = "Germany@2024"  # Your actual password
+
+# Encode username and password
+username = quote_plus(username)
+password = quote_plus(password)
+
+uri = f"mongodb+srv://{username}:{password}@cluster0.zdfnl8f.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
+client = MongoClient(uri)
+# MongoDB client
+#client = MongoClient("mongodb+srv://narkhedenikhilesh:<Germany@2024>@cluster0.zdfnl8f.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 db = client["supply_chain"]
 
 # Users and roles
